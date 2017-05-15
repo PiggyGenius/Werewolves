@@ -1,0 +1,88 @@
+/**-CSS file for the header **/
+
+header {
+    background-color: rgb(164, 32, 7);
+    position: relative;
+    min-height: 60px;
+}
+
+#tab-title
+{
+        position : absolute;
+
+        padding : 0;
+
+        font : bold 21px Batang, arial, serif;
+
+        list-style-type : none;
+
+        left : 50%;
+
+        margin-top : 0;
+    
+        height: 60px;
+    
+}
+
+#tab-title li
+{
+    float : left;
+
+    height : 60px; /* à modifier suivant la taille de la police pour centrer le texte dans l'onglet */
+
+    background-color: rgb(164, 32, 7);
+
+}
+
+#tab-title li.active
+{
+    /**border-bottom: 1px solid #fff;**/
+    /**background-color: red;**/
+}
+
+#tab-title a
+{
+    display : block;
+
+    color : white;
+
+    text-decoration : none;
+
+    padding : 4px;
+}
+
+#tab-title a:hover
+{
+    background : black;
+}
+
+#tab
+{
+    float: right;
+    
+    padding-bottom : 25px;
+}
+
+#tab-title a.title {
+    padding: 18px;
+}
+
+.connection-bar {
+    width: 150px;
+    height: 60px;
+    display: block;
+    float: right;
+}
+
+.connection-bar a.sign-in {
+    background-color: #606060;
+    border: double;
+    color: white;
+    padding: 9px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 7px;
+    text-shadow: 2px 3px 5px rgba(0,0,0,.55);
+}

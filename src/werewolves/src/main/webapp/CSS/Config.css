@@ -1,0 +1,65 @@
+.config-title {
+    width: 100%;
+    font: bold 21px Batang, arial, serif;    
+    margin-bottom: 10px;
+    color: white;
+    text-align: center;
+}
+
+.config-title h4 {
+    margin-top: 20px;
+}
+
+.container-param {
+    width: 80%;
+    background-color: rgb(164, 32, 7);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.parameters {
+    background-color: white;
+    padding: 50px 30PX 30PX 30PX;
+}
+
+.basic-param {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.advanced-param {
+    display: inline-block;
+    float: right;
+    margin-right: 40px;
+}
+
+.parameters ul {
+    list-style:none;
+    margin-left:0;
+    padding-left:0;
+}
+
+.parameters ul li {
+    margin-bottom: 10px;
+}
+
+.btn-cont {
+    padding: 15px 0px 15px 0px;
+}
+
+.btn-create {
+    display: block;
+    width: 150px;
+    height: 37px;
+    font-size: 14px;
+    color: #fff;
+    text-shadow: 2px 3px 5px rgba(0,0,0,.55);
+    background-color: rgba(164, 32, 7, 0.9);
+    line-height: 2.5;
+    transition: .3s;
+    margin-left: auto;
+    margin-right: auto;
+}

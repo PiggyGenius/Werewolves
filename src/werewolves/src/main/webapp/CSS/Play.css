@@ -1,0 +1,126 @@
+.play-title {
+    width: inherit;
+    text-align: center;
+}
+
+.play-title h4 {
+    font-size: 45px;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.play-title p {
+    color: white;
+    margin-bottom: 20px;
+}
+
+#games-table {
+    background-color: #a02913;
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+
+#lobby-table {
+    background-color: #a02913;
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+#running-table {
+    background-color: #a02913;
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.game {
+    background-color: white;
+    margin: 0px 50px 0px 50px;
+    border: double;
+    height: 82px;
+}
+.game h2 {
+    margin-left: 15px;
+}
+
+.game-title {
+    font-size: 35px;
+    margin-left: 20px;
+    line-height: 75px; /** Centrer verticalement **/
+    float: left;
+    width: 166px;
+    text-align: center;
+}
+
+.game-durations {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 40px;
+    padding-bottom: 8px; /** Centrer verticalement **/
+}
+
+.game-durations ul {
+    list-style:none;
+    margin-left:0;
+    padding-left:0;
+}
+
+.game-durations li {
+    margin-bottom: 6px;
+}
+
+.game-start {
+    margin-left: 30px;
+    vertical-align: super;
+}
+
+.game-roles {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 40px;
+    padding-bottom: 8px; /** Centrer verticalement **/
+}
+
+.game-roles ul {
+    list-style:none;
+    margin-left:0;
+    padding-left:0;
+    display: inline-block;
+}
+
+.game-roles li {
+    margin-bottom: 3px;
+}
+
+.game-join-btn {
+	display:inline-block;
+	width: 150px;
+	height: 37px;
+	font-size: 14px;
+	color: #fff;
+	text-shadow: 2px 3px 5px rgba(0,0,0,.55);
+	background-color: rgba(164, 32, 7, 0.9);
+	line-height:2.5;
+	transition:.3s;
+}
+
+.game-join {
+    text-align: center;
+    vertical-align: super;
+    display: inline-block;
+    float: right;
+    margin: 20px 30px 0px 0px;
+}

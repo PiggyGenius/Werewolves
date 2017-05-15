@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<title>LOUP GAROU EN LIGNE</title>
+        
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="CSS/bootstrap.css" />
+        
+        <!-- CSS Header -->
+        <link rel="stylesheet" href="CSS/header.css" />
+        
+        <!-- CSS Style -->
+        <link rel="stylesheet" href="CSS/Style.css" />
+        
+        <!-- CSS Home Index -->
+        <link rel="stylesheet" href="CSS/Home.css" />
+        
+        <!-- CSS Config Page -->
+        <link rel="stylesheet" href="CSS/Config.css" />
+        
+        <!-- CSS Bootstrap DatePicker -->
+        <link rel="stylesheet" href="CSS/bootstrap-datetimepicker.css" />
+        
+    </head>
+    
+    <body>
+        <header class="header">
+			<script src="jquery.js"></script>
+			<script src="header.js"></script>
+        </header>
+        <div class="config-title">
+            <h1>Create your own game</h1>
+            <p>Here you can create a custom game with your own preferences</p>
+        </div>
+        <div class="container-param">
+            <div class="parameters">
+                <form id="createGame" method="post" action="createGame" accept-charset="UTF-8">
+                    <div class="basic-param">
+                        <ul>
+                            <li><label>Minimum number of players: </label>
+                                <input type="text" name="minPlayer" value="5"></li>
+                            <li><label>Maximum number of players: </label>
+                                <input type="text" name="maxPlayer" value="20"></li>
+
+                            <li><label>Day begins at: </label>
+                                <select class="dayHours" name="dayHours"></select>h and <select class="dayMinutes" name="dayMinutes"></select>m</li>
+                            <li><label>Length of day: </label>
+                                <select class="dayLengthHours" name="dayLengthHours"></select>h and <select class="dayLengthMinutes" name="dayLengthMinutes"></select>m</li>
+                            <li><label>Length of night: </label>
+                                <select class="nightLengthHours" name="nightLengthHours"></select>h and <select class="nightLengthMinutes" name="nightLengthMinutes"></select>m</li>
+                            <li><label>Game begins the: (yyyy-mm-dd)</label>
+                                <input type="date" id="gameDate" name="gameDate"></li>
+                        </ul>
+                    </div>
+                    <div class="advanced-param">
+                        <label>Power probabilities: </label>
+                        <ul>
+                            <li>Contaminater: <input type="text" value="0.0" name="contamination"></li>
+                            <li>Insomniac: <input type="text" value="0.0" name="insomniac"></li>
+                            <li>Fortune teller: <input type="text" value="0.0" name="fortuneTeller"></li>
+                            <li>Spiritualist: <input type="text" value="0.0" name="spiritualist"></li>
+                            <li>Werewolf: <input type="text" value="0.33" name="werewolf"></li>
+                        </ul>
+                        <!-- Only works with chrome... -->
+                        <!--<input type="date" name="gameDate">-->
+                        <!--<input type="time" name="gameTime">-->
+                        <!-- Only works with chrome... -->
+                    </div>
+                    <div class="btn-cont">
+                        <input class="btn-create" type="submit" name="submitGame"/>
+                    </div>
+                </form>
+                <script src="jquery.js"></script>
+                <script src="jquery.validate.js"></script>
+                <script src="create_game.js"></script>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+		<h1>Home</h1>
+		<p id="gameBoard"></p>
+		<script src="jquery.js"></script>
+		<script>
+			var maxId = 0;
+	 		function processData(data){
+	 			var json_data = JSON.parse(data);
+	 			maxId = json_data.maxId;
+				var gameBoard = json_data.gameBoard;
+	 			for(var i=0; i<gameBoard.length; i++){
+	 				var game = gameBoard[i];
+					var form = document.createElement('form');
+					var submit = document.createElement('input');
+					var gameId = document.createElement('input');
+					form.setAttribute('method', 'post');
+					form.setAttribute('action', 'gameLobby');
+					submit.setAttribute('type', 'submit');
+					submit.setAttribute('value', 'join');
+					gameId.setAttribute('type', 'hidden');
+					gameId.setAttribute('value', game['gameId']);
+					gameId.name = 'gameId';
+		  			submit.name = 'submit';
+					form.appendChild(submit);
+					form.appendChild(gameId);
+					document.getElementById('gameBoard').appendChild(form);
+	 				for(var key in game){
+						document.getElementById("gameBoard").innerHTML += key+": "+game[key]+"<br/>";
+	 				}
+	 				document.getElementById("gameBoard").innerHTML += "<br/>";
+	 			}
+	 		}
+	 		(function fetchGameBoard(){
+				$.get('gameBoard', {'maxId': maxId, 'action': 1}, processData);
+				// Add .fail to $get to deal with errors (fail, done,...) function arg
+				setTimeout(fetchGameBoard, 1000);
+	 		})();
+		</script>
+    </body>
+	<footer>
+	</footer>
+</html>

@@ -1,0 +1,95 @@
+body {
+    background-color: black;
+    color: white;
+    height: 100%;
+    margin: 0px;
+}
+
+hr {
+    height: 10px;
+    background-color: rgb(98, 98, 98);
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    border: 1px solid;
+    padding: 10px;
+}
+
+.container-inGame h1 {
+    background-color: #565656;
+}
+
+#playerRole, #playerDead, #gameTime {
+    color: rgb(164, 32, 7);
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+#msgList ul li {
+    padding-bottom: 5px;
+}
+
+#votesTable tr {
+    border: 1px solid;
+}
+
+table {
+    border: 30px solid rgb(164, 32, 7);
+    margin-left: auto;
+    margin-right: auto;
+    overflow-y: scroll;
+    width: 100%;
+    background-color: #565656
+}
+
+table td {
+    border: 1px solid white;
+    padding: 10px;
+    width: 100%;
+}
+
+#msgList {
+    border: 30px solid rgb(164, 32, 7);
+    width: 80%;
+    background-color: #565656;
+    padding-top: 15px;
+    height: 17em;
+    word-wrap: break-word;
+    overflow-y: scroll;
+}
+
+#voteForm {
+    text-align: center;
+    margin: 20px;
+    border: 10px solid rgb(164, 32, 7);
+    background-color: rgb(164, 32, 7);
+}
+
+#info-bar h1 {
+    display: inline-block;
+    color: black;
+    border: none;
+    margin: 0px;
+    font-size: 24px;
+    width: inherit;
+    text-align: center;
+}
+
+#info-bar p {
+    display: inline-block;
+    color: black;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+#msgField {
+    width: 84%;
+    height: 20px;
+}
+
+#msgForm, #chatForm {
+    border: 10px solid rgb(164, 32, 7);
+    background-color: rgb(164, 32, 7);
+}

@@ -1,0 +1,211 @@
+.chat {
+    background-color: black;
+    width: 35%;
+    float: left;
+    display: inline-block;
+}
+
+.dashboard {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    height: 35.6em;
+    overflow-y: scroll;
+}
+
+.phase-title {
+    font : bold 21px Batang, arial, serif;
+    background-color: black;
+    color: white;
+    margin: 0px !important;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+#players-list {
+    width: 25%;
+    float: right;
+    display: inline-block;
+    max-height: 74%;
+    position: absolute;
+    overflow-y: scroll;
+    margin-bottom: 160px;
+}
+
+#list-players-voted {
+    background-color: rgb(164, 32, 7);
+    width: 100%;
+    padding: 40px 40px 5px 40px;
+}
+
+#list-players-to-vote {
+    background-color: #565656;
+    width: 100%;
+    padding: 5px 40px 40px 40px;
+}
+
+.player {
+    background-color: white;
+    border-style: double;
+    padding: 9px 10px 17px 10px;
+}
+
+.player-name {
+    font : bold 21px Batang, arial, serif;
+    width: 40%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+span.nb-vote {
+    font : bold 21px Batang, arial, serif;
+    color: rgb(164, 32, 7);
+}
+
+.disp-btn {
+    text-align: center;
+    margin: 20px;
+}
+
+.btn {
+    float: right;
+    margin-right: 20px;
+    padding: 15px 0px 15px 0px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#list-players-voted .vote-btn {
+    display:block;
+	width: 150px;
+	height: 37px;
+	font-size: 14px;
+	color: #fff;
+	text-shadow: 2px 3px 5px rgba(0,0,0,.55);
+	background-color: rgb(164, 32, 7);
+	line-height:2.5;
+	transition:.3s;
+}
+
+#list-players-to-vote .vote-btn {
+    display:block;
+	width: 150px;
+	height: 37px;
+	font-size: 14px;
+	color: #fff;
+	text-shadow: 2px 3px 5px rgba(0,0,0,.55);
+	background-color: #565656;
+	line-height:2.5;
+	transition:.3s;
+}
+
+#listVote, #listNoVote {
+    max-height: 340px;
+    overflow: scroll;
+}
+
+.player-status {
+    font : bold 13px Batang, arial, serif;
+}
+
+.player-role {
+    margin-left: 30px;
+    font : bold 13px Batang, arial, serif;
+}
+
+#info-bar {
+    position: fixed;
+    z-index: 100; 
+    bottom: 0; 
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border: 20px rgb(164, 32, 7) solid;
+    height: auto;
+    max-height: 25%;
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.container-inGame {
+    padding-bottom: 200px;
+    overflow: scroll;
+}
+
+.roleCard-player {
+    text-align: center;
+    margin: 10px;
+    max-width: 125px;
+    display: inline-block;
+}
+
+.roleCard-player img {
+    border-radius: 6%;
+    max-width: inherit;
+}
+
+.roleCard-player p {
+    text-align: center;
+    font : bold 15px Batang, arial, serif;
+
+}
+
+.player-goal {
+    width:166px;
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    margin-top: 45px;
+    vertical-align: top;
+}
+
+.player-goal p {
+    font : bold 15px Batang, arial, serif;
+}
+
+.info-game {
+    display: inline-block;
+    padding: 10px;
+}
+
+.info-game h4 {
+    font : bold 20px Batang, arial, serif;
+}
+
+.msg-container {
+    height: 300px;
+    background-color: black;
+    color: rgb(164, 32, 7);
+    padding-top: 10px;
+    font: bold 16px Batang, arial, serif;
+    border: 10px solid #565656;
+}
+
+.send-btn {
+    display:block;
+	width: 110px;
+	height: 37px;
+	font-size: 14px;
+	color: #fff;
+	text-shadow: 2px 3px 5px rgba(0,0,0,.55);
+	background-color: rgb(164, 32, 7);
+	line-height:2.5;
+	transition:.3s;
+    border-radius: 15%;
+}
+
+.chat .btn {
+    float: none;
+}
+
+#specialPowers {
+    margin-top: 25px;
+    vertical-align: top;
+    display:inline-block;
+    float: right;
+    position: absolute;
+    top: 0px;
+    left: 80%;
+}

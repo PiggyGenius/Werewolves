@@ -1,0 +1,58 @@
+body {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    height: 100%;
+}
+
+hr {
+    height: 10px;
+    background-color: rgb(98, 98, 98);
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    border: 1px solid;
+    padding: 10px;
+}
+
+#playerRole, #playerDead, #gameTime {
+    color: rgb(164, 32, 7);
+}
+
+ul li {
+    padding-bottom: 5px;
+}
+
+#votesTable tr {
+    border: 1px solid;
+}
+
+table {
+    border: 10px solid rgb(164, 32, 7);
+    margin-left: auto;
+    margin-right: auto;
+    height: 3px;
+    overflow-y: scroll;
+}
+
+table td {
+    border: 1px solid white;
+    padding: 10px;
+}
+
+#msgList {
+    border: solid rgb(164, 32, 7);
+    width: 80%;
+    background-color: #565656;
+    padding-top: 15px;
+    min-height: 200px;
+    max-height: 80%;
+    overflow-x: scroll;
+}
+
+#voteForm {
+    text-align: center;
+    margin: 20px;
+}

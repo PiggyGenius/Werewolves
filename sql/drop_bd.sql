@@ -1,0 +1,15 @@
+DROP FUNCTION getNewMessages;
+DROP PACKAGE TYPES;
+DROP PROCEDURE voteInsert;
+DROP PROCEDURE startGame;
+DROP FUNCTION checkEnd;
+DROP PROCEDURE leaveGame;
+DROP TRIGGER gameLobbyInsert;
+DROP TRIGGER contaminatorTrigger;
+DROP TRIGGER spiritualistTrigger;
+DROP TABLE UserVote;
+DROP TABLE UserGame;
+DROP TABLE GameLobby;
+DROP TABLE Message;
+DROP TABLE Game;
+DROP TABLE Client;
